@@ -23,6 +23,6 @@ class Punctuator:
         tokenize and encode raw text
         text -- message string
         """
-        text = self._depunctuate(text)
+        text = self._depunctuate(text.lower())
         text = [self.encoder.encode(text)]
         return pad_sequences(text, maxlen=self.maxlen, padding=self.padding)
