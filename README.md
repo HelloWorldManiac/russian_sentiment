@@ -34,7 +34,7 @@ The dataset has been split into train/test in proportion 85/15. Then the model h
 | F1-score (macro) on test | 0.8015 |
 | avg CPU time| < 0.015s |
 
-In order to reproduce this result on an adequate dataset the weights of the model are saved and then used in the Flask application.
+In order to reproduce this result on an adequate dataset the weights of the model have been saved and then used in the Flask application.
 
 ## Application
 
