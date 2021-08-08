@@ -8,7 +8,7 @@ This model is derived to get rid of dictionary-based approach, which is crucial 
 
 ## Data sources:
 - labelled data from [vk.com](https://aclanthology.org/C18-1064.pdf)
-- labelled data from Russian seqment of [Twitter](https://twitter.com/)
+- labelled data from Russian segment of [Twitter](https://twitter.com/)
 - labelled data from [otzovik](https://otzovik.com/)
 
 Due to machine labelling a substantial part of messages has been mislabelled. In order to compose a reliable dataset the initial data has been distilled to ~33k items.
@@ -17,7 +17,7 @@ Another problem was the strong correlation between labels and the presence of em
 ## Preprocessing
 The preprocessing process is reduced to two stages:
 
-- elimintaion of smileys, ids and notorious punctuation marks
+- elimintaion of emoticons, ids and notorious punctuation marks
 - tokenization and encoding with old but gold Tensorflow solution [SubwordTextEncoder](https://www.tensorflow.org/datasets/api_docs/python/tfds/deprecated/text/SubwordTextEncoder)
 By using this approach we reduce the vocab to 2^12 items without losing the ability to catch the semantics of a certain sequence. Therefore we do not need any stemming/lemmatization any more as well we have no need to coin a specific policy for OOVs since any word is bound to be split into a sequence of tokens.
 
