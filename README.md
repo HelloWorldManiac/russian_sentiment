@@ -44,7 +44,7 @@ In order to build it run:
 ```sh
 docker build -t [name] .
 ```
-In order to run it in detached mode run
+In order to run it in a detached mode run
 ```sh
 docker run  -d -p 8585:8585 [name]
 ```
