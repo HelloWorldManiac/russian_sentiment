@@ -12,7 +12,7 @@ This model is derived to get rid of dictionary-based approach, which is crucial 
 - labelled data from [otzovik](https://otzovik.com/)
 
 Due to machine labelling a substantial part of messages has been mislabelled. In order to compose a reliable dataset the initial data has been distilled to ~33k items.
-Another problem was the strong correlation between labels and the presence of smileys in the text. In order to overcome this semiotic shift (thus, overfitting thereto) and to base entirely upon the semantics of the texts all those signs have been filtered out.
+Another problem was the strong correlation between labels and the presence of emoticons in the text. In order to overcome this semiotic shift (thus, overfitting thereto) and to base entirely upon the semantics of the texts the most popular emoticons have been filtered out.
 
 ## Preprocessing
 The preprocessing process is reduced to two stages:
