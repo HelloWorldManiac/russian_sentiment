@@ -1,0 +1,6 @@
+tensorflow==2.5.0
+tensorflow-datasets==4.0.1
+pandas==1.1.5 
+numpy==1.19.5
+flask
+flask_restful
