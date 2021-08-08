@@ -77,7 +77,7 @@ VOCAB_SIZE = encoder.vocab_size + 1
 EMDEDDING_DIM = 128
 N_UNITS = 64
 EPOCHS = 5
-BATCH_SIZE = 125
+BATCH_SIZE = 128
 
 # Instantiate the layout of the model
 
